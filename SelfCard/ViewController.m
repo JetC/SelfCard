@@ -24,12 +24,14 @@
 
 - (void)sync
 {
-    for (UIButton *cardButton in self.cardButtons) {
+    for (UIButton *cardButton in self.cardButtons)
+    {
         Card *card = self.cards[[self.cardButtons indexOfObject:cardButton]];
         [cardButton setTitle:[card contain] forState:UIControlStateSelected];
         [cardButton setTitle:[card contain] forState:UIControlStateSelected|UIControlStateDisabled];
         cardButton.selected = card.selected;
-        if (!card.playable) {
+        if (!card.playable)
+        {
             cardButton.alpha = 0.6;
         }
         cardButton.enabled = card.playable;

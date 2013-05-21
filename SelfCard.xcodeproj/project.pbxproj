@@ -23,6 +23,9 @@
 		0E121B64173D5F01005710B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E121B3F173D5F01005710B1 /* Foundation.framework */; };
 		0E121B6C173D5F02005710B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E121B6A173D5F01005710B1 /* InfoPlist.strings */; };
 		0E121B6F173D5F02005710B1 /* SelfCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E121B6E173D5F02005710B1 /* SelfCardTests.m */; };
+		0EE28A0E17414473006737B6 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE28A0D17414473006737B6 /* Game.m */; };
+		0EE343D5173DD12D007B9D38 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE343D4173DD12D007B9D38 /* Card.m */; };
+		0EE343D8173DD13B007B9D38 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE343D7173DD13B007B9D38 /* Deck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,12 @@
 		0E121B6B173D5F02005710B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0E121B6D173D5F02005710B1 /* SelfCardTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfCardTests.h; sourceTree = "<group>"; };
 		0E121B6E173D5F02005710B1 /* SelfCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfCardTests.m; sourceTree = "<group>"; };
+		0EE28A0C17414472006737B6 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		0EE28A0D17414473006737B6 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		0EE343D3173DD12D007B9D38 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		0EE343D4173DD12D007B9D38 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		0EE343D6173DD13B007B9D38 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		0EE343D7173DD13B007B9D38 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +126,15 @@
 		0E121B43173D5F01005710B1 /* SelfCard */ = {
 			isa = PBXGroup;
 			children = (
-				0E121B4C173D5F01005710B1 /* AppDelegate.h */,
-				0E121B4D173D5F01005710B1 /* AppDelegate.m */,
 				0E121B55173D5F01005710B1 /* MainStoryboard.storyboard */,
 				0E121B58173D5F01005710B1 /* ViewController.h */,
 				0E121B59173D5F01005710B1 /* ViewController.m */,
+				0EE343D3173DD12D007B9D38 /* Card.h */,
+				0EE343D4173DD12D007B9D38 /* Card.m */,
+				0EE343D6173DD13B007B9D38 /* Deck.h */,
+				0EE343D7173DD13B007B9D38 /* Deck.m */,
+				0EE28A0C17414472006737B6 /* Game.h */,
+				0EE28A0D17414473006737B6 /* Game.m */,
 				0E121B44173D5F01005710B1 /* Supporting Files */,
 			);
 			path = SelfCard;
@@ -130,6 +143,8 @@
 		0E121B44173D5F01005710B1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0E121B4C173D5F01005710B1 /* AppDelegate.h */,
+				0E121B4D173D5F01005710B1 /* AppDelegate.m */,
 				0E121B45173D5F01005710B1 /* SelfCard-Info.plist */,
 				0E121B46173D5F01005710B1 /* InfoPlist.strings */,
 				0E121B49173D5F01005710B1 /* main.m */,
@@ -273,6 +288,9 @@
 				0E121B4A173D5F01005710B1 /* main.m in Sources */,
 				0E121B4E173D5F01005710B1 /* AppDelegate.m in Sources */,
 				0E121B5A173D5F01005710B1 /* ViewController.m in Sources */,
+				0EE343D5173DD12D007B9D38 /* Card.m in Sources */,
+				0EE343D8173DD13B007B9D38 /* Deck.m in Sources */,
+				0EE28A0E17414473006737B6 /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +471,7 @@
 				0E121B74173D5F02005710B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E121B75173D5F02005710B1 /* Build configuration list for PBXNativeTarget "SelfCardTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +480,7 @@
 				0E121B77173D5F02005710B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
